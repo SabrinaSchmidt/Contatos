@@ -4,11 +4,13 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.DBCtrls;
 
 type
   TForm1 = class(TForm)
     Label1: TLabel;
+    DBEdit1: TDBEdit;
   private
     { Private declarations }
   public

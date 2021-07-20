@@ -12,9 +12,14 @@ uses
 
 type
   TDM = class(TDataModule)
-    FDConnection1: TFDConnection;
-    FDTable1: TFDTable;
-    DataSource1: TDataSource;
+    Conexao: TFDConnection;
+    tbContatos: TFDTable;
+    DsContatos: TDataSource;
+    tbContatosid: TFDAutoIncField;
+    tbContatosnome: TStringField;
+    tbContatoscelular: TStringField;
+    tbContatosbloqueado: TBooleanField;
+    tbContatosdata: TDateTimeField;
   private
     { Private declarations }
   public

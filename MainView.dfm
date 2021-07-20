@@ -26,4 +26,11 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object DBEdit1: TDBEdit
+    Left = 40
+    Top = 112
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
 end

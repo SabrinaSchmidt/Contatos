@@ -15,6 +15,7 @@ object DM: TDM
   end
   object tbContatos: TFDTable
     Active = True
+    AfterInsert = tbContatosAfterInsert
     IndexFieldNames = 'id'
     Connection = Conexao
     UpdateOptions.UpdateTableName = 'teste_delphi.contatos'
@@ -24,34 +25,33 @@ object DM: TDM
     object tbContatosid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
-      ReadOnly = True
     end
     object tbContatosnome: TStringField
+      AutoGenerateValue = arDefault
       FieldName = 'nome'
       Origin = 'nome'
-      Required = True
       Size = 50
     end
     object tbContatoscelular: TStringField
+      AutoGenerateValue = arDefault
       FieldName = 'celular'
       Origin = 'celular'
-      Required = True
       Size = 15
     end
     object tbContatosbloqueado: TBooleanField
+      AutoGenerateValue = arDefault
       FieldName = 'bloqueado'
       Origin = 'bloqueado'
-      Required = True
     end
     object tbContatosdata: TDateTimeField
+      AutoGenerateValue = arDefault
       FieldName = 'data'
       Origin = 'data'
-      Required = True
     end
     object tbContatosobs: TStringField
+      AutoGenerateValue = arDefault
       FieldName = 'obs'
       Origin = 'obs'
-      Required = True
       Size = 250
     end
   end

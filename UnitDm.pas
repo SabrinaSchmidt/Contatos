@@ -20,6 +20,7 @@ type
     tbContatoscelular: TStringField;
     tbContatosbloqueado: TBooleanField;
     tbContatosdata: TDateTimeField;
+    tbContatosobs: TStringField;
   private
     { Private declarations }
   public

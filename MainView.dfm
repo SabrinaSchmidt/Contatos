@@ -144,5 +144,6 @@ object Form1: TForm1
     Width = 361
     Height = 21
     TabOrder = 6
+    OnChange = EditBuscaChange
   end
 end

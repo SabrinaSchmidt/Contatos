@@ -23,6 +23,7 @@ type
     DBGrid1: TDBGrid;
     Label6: TLabel;
     EditBusca: TEdit;
+    procedure EditBuscaChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,5 +38,10 @@ implementation
 {$R *.dfm}
 
 uses UnitDm;
+
+procedure TForm1.EditBuscaChange(Sender: TObject);
+begin
+DM.tbContatos.Locate('nome', EditBusca.Text, [loPartialKey]);
+end;
 
 end.

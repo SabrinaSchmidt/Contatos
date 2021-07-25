@@ -24,6 +24,7 @@ object DM: TDM
     object tbContatosid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbContatosnome: TStringField
       FieldName = 'nome'
@@ -46,6 +47,12 @@ object DM: TDM
       FieldName = 'data'
       Origin = 'data'
       Required = True
+    end
+    object tbContatosobs: TStringField
+      FieldName = 'obs'
+      Origin = 'obs'
+      Required = True
+      Size = 250
     end
   end
   object DsContatos: TDataSource
